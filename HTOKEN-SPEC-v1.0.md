@@ -42,9 +42,16 @@
 
 ## 1. Abstract
 
-HTOKEN (Human-Token) is an open standard for measuring, logging, verifying, and comparing human labor alongside AI compute within hybrid human-AI workflows.
+HTOKEN (Human-Token) is an open communication standard that provides a shared vocabulary for measuring, logging, verifying, and comparing human labor alongside AI compute within hybrid human-AI workflows.
+
+HTOKEN was originally developed for the legal industry, where the cost asymmetry between AI and human labor is extreme and the compliance requirements are absolute — distinguishing AI-generated work from attorney-verified work is not optional, it is a legal requirement. The standard was designed to be industry-agnostic from inception, providing the same structured vocabulary for any domain where AI augments expensive human labor.
 
 In modern AI-augmented organizations, AI systems already produce granular cost data: compute time, token counts, per-task spend, and deterministic execution logs. Human labor, historically, produces none of these. HTOKEN closes this gap by treating human labor as a measurable, auditable execution unit — priced, timed, task-linked, and verified — placed on the same ledger as AI output.
+
+HTOKEN serves as a **communication standard** between three audiences:
+- **AI systems** — structured output format for reporting work performed (model, tokens, cost, compute time)
+- **Human leadership** — unified dashboard language for cost visibility, savings analysis, and verification status
+- **Regulatory and compliance bodies** — audit trail proving who performed what work and whether licensed professionals completed required steps
 
 This creates **economic symmetry**: a single source of truth where every unit of work — whether performed by a human or an AI — is tracked with equal rigor.
 
@@ -633,15 +640,31 @@ Reference implementations of this specification are licensed under the [Apache L
 
 ## 19. Acknowledgments
 
-HTOKEN was created by **Roberto Stanley** at **Iron Noodle Technologies LLC** in 2026, born from the operational need to account for human labor with the same precision that AI systems account for compute. It was first deployed in production at a bankruptcy law firm, where the distinction between AI-generated work and attorney-verified work is not a nice-to-have — it's a legal requirement.
+HTOKEN was created by **Roberto Stanley** at **Iron Noodle Technologies LLC** in 2026.
 
-The standard was developed through real-world deployment, not theoretical design. Every element of this specification — the routing protocol, the verification escalation, the comparative cost analysis — exists because a production system needed it.
+### Origin
+
+HTOKEN was born from the operational need to account for human labor with the same precision that AI systems account for compute. It was first deployed in production at a bankruptcy law firm, where the distinction between AI-generated work and attorney-verified work is not a nice-to-have — it's a legal requirement (Unauthorized Practice of Law, 18 U.S.C. § 1346 and state equivalents).
+
+In that environment, the cost asymmetry is stark: Big Law partners bill at $2,000+/hour while AI can produce comparable research and drafting for $2-10 per task. Small firms that deploy AI effectively can compete — but only if they can **prove** that licensed professionals performed the regulated work, and **measure** the actual savings with auditable precision.
+
+HTOKEN provided that proof and that measurement. The firm's ledger showed 74-95% cost reduction on specific workflows, with every attorney review verified and every AI contribution logged.
+
+### Why a Standard
+
+The vocabulary HTOKEN introduced — `PENDING`, `CONFIRMED`, `BLENDED`, `AI_ONLY`, `routing_reason`, `verification_proof`, `human_only_cost`, `savings_pct` — turned out to be universal. Healthcare organizations face the same compliance verification requirements (certified coders, licensed practitioners). Financial services needs the same audit trails. Software engineering teams need the same blended cost analysis.
+
+HTOKEN is a **communication standard** — a shared language so that AI systems, human workers, leadership dashboards, and compliance auditors are all reading from the same ledger. Like HTTP standardized how computers communicate, HTOKEN standardizes how organizations account for human-AI collaboration.
+
+### Design Philosophy
+
+Every element of this specification — the routing protocol, the verification escalation, the comparative cost analysis, the conformance levels — exists because a production system needed it. This standard was developed through real-world deployment, not theoretical design.
 
 For questions, contributions, or conformance certification, contact:
 
 - **Standard Author:** Iron Noodle Technologies LLC
 - **Website:** ironnoodle.com
-- **Repository:** github.com/ironnoodle/htoken-spec
+- **Repository:** github.com/rstan251/htoken-spec
 
 ---
 

@@ -1,8 +1,8 @@
 # HTOKEN Standard
 
-**Human-Token Labor Accounting for AI-Augmented Organizations**
+**A Communication Standard for Human-AI Work Accounting**
 
-HTOKEN is an open standard for measuring, logging, verifying, and comparing human labor alongside AI compute in hybrid workflows.
+HTOKEN is an open standard that gives AI systems and human leadership a shared vocabulary for measuring, logging, verifying, and comparing work -- regardless of who (or what) performed it.
 
 > *"If AI has token counts, cost-per-task, and deterministic logs -- humans should too."*
 
@@ -10,11 +10,31 @@ HTOKEN is an open standard for measuring, logging, verifying, and comparing huma
 
 ## Why This Exists
 
-AI changed how work gets done. It didn't change how we account for it.
+### The Origin: Expensive Labor in a Captured Market
 
-Every AI system produces granular cost data: compute milliseconds, token counts, per-task spend, deterministic logs. When Claude drafts a document, you know exactly what it cost -- down to the fraction of a cent.
+HTOKEN was born in the legal industry, where the cost asymmetry between AI and human labor is extreme. Big Law partners bill at $2,000/hour. A small bankruptcy firm pays associates $150-300/hour. Meanwhile, an AI can draft the same document for $2.50.
+
+The question was never "Can AI do this work?" -- it was **"How do you prove what AI did, what the human did, what it cost, and that the licensed professional actually reviewed it?"**
+
+In law, that proof isn't optional. Unauthorized Practice of Law (UPL) means if you can't demonstrate a licensed attorney performed the legal judgment, you're committing a crime. HTOKEN was built to solve this: a single ledger where AI work and human work sit side by side, with verification that the human actually did their part.
+
+But the problem HTOKEN solves isn't unique to law.
+
+### The Bigger Problem: No Common Language
+
+Every AI system already produces granular cost data: compute milliseconds, token counts, per-task spend, deterministic logs. When an AI drafts a document, you know exactly what it cost -- down to the fraction of a cent.
 
 But when a human reviews that document, signs it, files it, or calls the client about it? The cost is invisible. The time is self-reported. The completion is assumed. The comparison is impossible.
+
+**HTOKEN is a communication standard.** It gives:
+- **AI systems** a structured way to report their work (model, tokens, cost, compute time)
+- **Human workers** a structured way to log their work (hours, rate, role, verification)
+- **Leadership** a unified view of both (savings, blended cost, pending verifications)
+- **Regulators** an audit trail proving who did what (verification protocol, routing justification)
+
+Without a shared vocabulary, organizations are left guessing. HTOKEN standardizes the terms so that LLMs, dashboards, CFOs, and compliance teams are all reading from the same ledger.
+
+### The Measurement Crisis
 
 This is the **measurement crisis** of AI-augmented organizations:
 
@@ -335,9 +355,34 @@ Reference implementations are licensed under [Apache License 2.0](https://www.ap
 
 Created by **Roberto Stanley** at [Iron Noodle Technologies LLC](https://ironnoodle.com) in 2026.
 
-HTOKEN was born from production deployment at a bankruptcy law firm, where distinguishing AI-generated work from attorney-verified work isn't optional -- it's the law. Every element of this specification exists because a production system needed it.
+### Built for Law, Designed for Everything
 
-The standard was developed through real-world deployment, not theoretical design.
+HTOKEN started as the internal accounting layer for a bankruptcy law firm's AI operating system. The firm needed to:
+
+1. **Prove compliance** -- Show that licensed attorneys reviewed AI-generated work (UPL protection)
+2. **Measure real savings** -- Demonstrate to the managing partner that AI reduced operating costs by 74-95% on specific workflows
+3. **Verify human execution** -- Court filings, client calls, and notarizations can't be faked. The ledger had to prove they happened.
+4. **Route intelligently** -- Decide which tasks go to AI, which require humans, and which need both
+
+The result was a system where a $2.50 AI draft and a $150 attorney review appeared on the same ledger, with verification that the attorney actually reviewed it, and a comparison showing what it would have cost without AI.
+
+That system worked. Then it became clear the vocabulary wasn't law-specific at all.
+
+### The Universal Problem
+
+Every industry deploying AI alongside humans faces the same questions:
+- What did this actually cost?
+- Who did what?
+- Was the human work verified?
+- Are we saving money or just adding complexity?
+
+Healthcare needs to prove certified coders reviewed AI-suggested diagnoses. Financial services needs to show analysts verified AI research. Engineering teams need to track whether AI-generated code was reviewed before deployment. The vocabulary is the same everywhere.
+
+**HTOKEN is that vocabulary.** It standardizes the terms -- `PENDING`, `CONFIRMED`, `BLENDED`, `AI_ONLY`, `routing_reason`, `verification_proof` -- so that any organization, in any industry, can account for human-AI collaboration with the same precision.
+
+### Why Open Source
+
+Standards that live behind paywalls don't become standards. They become products. We open-sourced HTOKEN under CC BY 4.0 because the value isn't in the spec -- it's in being the organization that wrote it, deploys it in production, and certifies others against it. Every implementation of HTOKEN carries Iron Noodle's name in the attribution. That's better than a patent.
 
 ---
 
